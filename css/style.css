@@ -11,7 +11,35 @@
 header {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    background: aqua;
+    background: coral;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* вирівнює айтеми по вертикалі */
+    padding: 20px;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none; /*мінімалістичний вигляд списку, щоб не відображались крапочки*/
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: black;
 }
 
 
@@ -20,6 +48,34 @@ aside {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background: lightgreen;
+    font-size: 21px;
+}
+.sidebar {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px; /* відступ між пунктами */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* видаляє підкреслення посилань*/
+    color: black;
+    padding: 36px;
+    display: block;
+    text-align: center; /* вирівнювання по лівому краю */
+    transition: background-color 0.3s ease; /* плавний перехід фону при наведенні, manage the time of background appearance */
+}
+
+.sidebar ul li a:hover {
+    background-color: white; /* зміна кольору при наведенні */
+    color: black;
 }
 
 /* Main */
