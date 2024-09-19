@@ -67,9 +67,14 @@ footer {
 
         .footer-container-item {
             margin: 20px;
+            justify-content: center;
 
             > ul {
                 list-style-type: none;
+
+                > li {
+                    margin: 10px;
+                }
             }
         }
     }
