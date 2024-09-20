@@ -48,10 +48,10 @@ aside {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background: lightgreen;
-    font-size: 21px;
+    font-size: 20px;
 }
 .sidebar {
-    width: 400px;
+    width: 350px;
     padding: 20px;
     margin: 20px;
 }
@@ -119,7 +119,7 @@ footer {
 
     .footer-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         .footer-container-item {
             margin: 20px;
