@@ -16,7 +16,7 @@ header {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; /* вирівнює айтеми по вертикалі */
     padding: 20px;
 }
@@ -47,7 +47,7 @@ nav ul li a:hover {
 aside {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background: lightgreen;
+    background: darkgreen;
     font-size: 20px;
 }
 .sidebar {
@@ -66,11 +66,11 @@ aside {
 
 .sidebar ul li a {
     text-decoration: none; /* видаляє підкреслення посилань*/
-    color: black;
+    border: 5px solid black;
+    color: white;
     padding: 36px;
     display: block;
-    text-align: center; /* вирівнювання по лівому краю */
-    transition: background-color 0.3s ease; /* плавний перехід фону при наведенні, manage the time of background appearance */
+    text-align: left; /* вирівнювання по лівому краю */
 }
 
 .sidebar ul li a:hover {
@@ -92,7 +92,8 @@ main {
         align-items: center;
         justify-content: center;
         flex-flow: row wrap;
-        gap: 70px 120px;
+        width: 800px;
+        gap: 70px 70px;
 
         .img-container-item {
 
